@@ -1,0 +1,25 @@
+@import './_config';
+
+body {
+  background-color: $color-body;
+}
+
+main {
+  display: flex;
+  min-height: 93vh;
+  flex-direction: column;
+}
+
+.scrollbar-measure {
+	width: 100px;
+	height: 100px;
+	overflow: scroll;
+	position: absolute;
+	top: -9999px;
+}
+
+@media (max-width: 350px) {
+  [layout^="row"] > .col, [layout^="row"] > [layout^="col"] {
+    padding: 0 4px 8px 4px;
+  }
+}

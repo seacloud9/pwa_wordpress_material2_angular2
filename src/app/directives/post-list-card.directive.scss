@@ -1,0 +1,31 @@
+md-card{
+  height: 99%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  float: left;
+}
+
+md-card-header{
+  min-height: 333px;
+}
+
+.mdSm, .mdXs{
+  min-height: 220px;
+}
+
+.sc9TitlePost{
+  padding: 5px;
+}
+
+.wpsc9CardActions{
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
+}

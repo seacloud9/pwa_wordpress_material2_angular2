@@ -1,0 +1,37 @@
+<div *xl>
+  <md-grid-list cols="4" gutterSize="10px">
+    <md-grid-tile *ngFor="let post of _posts">
+      <PostListCard [PostContent]="post" class="postContainerWide" (click)="selectPost((post.slugFormat + '/'+  post.slug))"></PostListCard>
+    </md-grid-tile>
+  </md-grid-list>
+</div>
+<div *lg>
+  <md-grid-list cols="3"  gutterSize="10px" rowHeight="440px">
+  <md-grid-tile *ngFor="let post of _posts">
+    <PostListCard [PostContent]="post" class="postContainerWide" ></PostListCard>
+  </md-grid-tile>
+  </md-grid-list>
+</div>
+<div *md>
+  <md-grid-list cols="2" rowHeight="440px" gutterSize="10px">
+    <md-grid-tile *ngFor="let post of _posts">
+      <PostListCard [PostContent]="post" class="postContainerWide"></PostListCard>
+    </md-grid-tile>
+  </md-grid-list>
+</div>
+<div *sm>
+  <md-grid-list cols="1" rowHeight="440px" gutterSize="10px">
+    <md-grid-tile *ngFor="let post of _posts">
+      <PostListCard [PostContent]="post" class="postContainerWide"></PostListCard>
+    </md-grid-tile>
+  </md-grid-list>
+</div>
+<div *xs>
+  <md-grid-list cols="1" rowHeight="330px" gutterSize="10px">
+    <md-grid-tile *ngFor="let post of _posts">
+      <PostListCard [PostContent]="post" class="postContainerWide"></PostListCard>
+    </md-grid-tile>
+  </md-grid-list>
+</div>
+
+
