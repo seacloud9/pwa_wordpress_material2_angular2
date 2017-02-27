@@ -15,6 +15,7 @@ export class PostDetailComponent implements OnInit {
   constructor(private postsService: WordpressService, private route: ActivatedRoute, private router: Router, private ref: ChangeDetectorRef) { }
 
   getPost(slug){
+    window['scrollTo'](0, 0)
     this.postsService
       .getPost(slug)
       .subscribe(res => {

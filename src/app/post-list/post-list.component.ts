@@ -31,7 +31,7 @@ export class PostListComponent implements OnInit {
       if(params['page'] !== undefined){
         this._currentPage = params['page'];
       }else{
-        this._currentPage = 0;
+        this._currentPage = 1;
       }
     });
 
@@ -77,6 +77,7 @@ export class PostListComponent implements OnInit {
     this._currentPage++;
     if(this._currentPage > 0 && this._posts.length < 50){
        this.getPosts(this._currentPage);
+      history.replaceState({}, '', '/page/' + this._currentPage);
     }
   }
 
