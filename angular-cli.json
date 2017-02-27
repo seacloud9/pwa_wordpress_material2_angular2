@@ -1,7 +1,7 @@
 {
   "project": {
     "version": "1.0.0-beta.26",
-    "name": "ng-pokedex"
+    "name": "ng-wordpress"
   },
   "apps": [
     {
@@ -24,8 +24,8 @@
         "material-design-theme.scss"
       ],
       "scripts": [],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }

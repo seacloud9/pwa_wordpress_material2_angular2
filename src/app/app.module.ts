@@ -8,7 +8,6 @@ import { routes } from './app.routes';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/layout/header/header.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
-import {ImageLazyLoadModule, WebWorkerService} from 'ng2-image-lazy-load';
 import { WordpressService } from './shared/services/wordpress.service';
 import { ViewportService } from './shared/services/viewport.service';
 import { PostListComponent, SocialDialogComponent } from './post-list/post-list.component';
