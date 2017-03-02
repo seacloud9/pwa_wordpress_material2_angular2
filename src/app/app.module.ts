@@ -20,7 +20,8 @@ import { PostListCard } from './directives/post-list-card.directive';
 import { CeiboShare } from 'ng2-social-share';
 import { LazyLoadImageModule } from 'ng2-lazyload-image';
 import { InfiniteScrollModule } from 'angular2-infinite-scroll';
-
+import {ToastModule} from 'ng2-toastr/ng2-toastr';
+import { SwiperModule } from 'angular2-useful-swiper';
 
 let config = {
   breakPoints: {
@@ -59,7 +60,9 @@ export function ResponsiveDefinition(){
     HttpModule,
     LazyLoadImageModule,
     InfiniteScrollModule,
+    SwiperModule,
     MaterialModule.forRoot(),
+    ToastModule.forRoot(),
     RouterModule.forRoot(routes)
   ],
   providers: [{

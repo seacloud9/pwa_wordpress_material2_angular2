@@ -1,18 +1,18 @@
 <md-card class="wpsc9">
   <md-card-header *xl>
-    <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
+    <img src="{{PostContent.better_featured_image !== null && PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url !== undefined ? (PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
   </md-card-header>
   <md-card-header *lg>
-    <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
+    <img src="{{PostContent.better_featured_image !== null && PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url !== undefined ? (PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
   </md-card-header>
   <md-card-header *md>
-    <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
+    <img src="{{PostContent.better_featured_image !== null && PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url !== undefined ? (PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
   </md-card-header>
   <md-card-header *sm class="mdSm">
-    <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
+    <img src="{{PostContent.better_featured_image !== null && PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url !== undefined ? (PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
   </md-card-header>
   <md-card-header *xs class="mdXs">
-    <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
+    <img src="{{PostContent.better_featured_image !== null && PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url !== undefined ? (PostContent.better_featured_image.media_details.sizes['post-thumb'].source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
     </md-card-header>
   <md-card-content (click)="selectPost((PostContent.slugFormat + '/'+  PostContent.slug))">
     <div [innerHTML]="PostContent.title.rendered | sanitizeHtml" class="sc9TitlePost"></div>

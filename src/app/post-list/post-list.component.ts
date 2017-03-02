@@ -75,7 +75,7 @@ export class PostListComponent implements OnInit {
 
   onScrollDown(){
     this._currentPage++;
-    if(this._currentPage > 0 && this._posts.length < 50){
+    if(this._currentPage > 0 && this._posts.length !== undefined && this._posts.length < 50){
        this.getPosts(this._currentPage);
       history.replaceState({}, '', '/page/' + this._currentPage);
     }

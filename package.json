@@ -34,6 +34,7 @@
     "@ngtools/webpack": "^1.2.9",
     "aframe": "^0.5.0",
     "aframe-html-shader": "^0.1.1",
+    "angular-cli": "^1.0.0-beta.28.3",
     "angular2-infinite-scroll": "^0.3.1",
     "angular2-useful-swiper": "^3.0.0",
     "blueprint-css": "2.0.0-beta.5",
@@ -44,6 +45,7 @@
     "ng2-lazyload-image": "2.4.0",
     "ng2-responsive": "^0.8.3",
     "ng2-social-share": "0.0.10",
+    "ng2-toastr": "^1.5.1",
     "rxjs": "^5.0.1",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.7.2"
