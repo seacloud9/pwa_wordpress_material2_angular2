@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
@@ -8,8 +8,6 @@ import { routes } from './app.routes';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/layout/header/header.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
-import { WordpressService } from './shared/services/wordpress.service';
-import { ViewportService } from './shared/services/viewport.service';
 import { PostListComponent, SocialDialogComponent } from './post-list/post-list.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -22,6 +20,15 @@ import { LazyLoadImageModule } from 'ng2-lazyload-image';
 import { InfiniteScrollModule } from 'angular2-infinite-scroll';
 import {ToastModule} from 'ng2-toastr/ng2-toastr';
 import { SwiperModule } from 'angular2-useful-swiper';
+import { LogService } from './shared/services/log.service';
+import { VrModuleService } from './shared/services/vr-module.service';
+import { Store, StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import * as vr_reducers  from './shared/reducers';
+import {  Wrapper } from './wrapper/wrapper.component';
+import { DynamicComponent } from './dynamic/dynamic.component';
+import { AframeComponent } from './aframe/aframe.component';
+
 
 let config = {
   breakPoints: {
@@ -50,9 +57,12 @@ export function ResponsiveDefinition(){
     SocialDialogComponent,
     PostDetailComponent,
     CeiboShare,
-    PostListCard
+    Wrapper,
+    PostListCard,
+    DynamicComponent,
+    AframeComponent
   ],
-  entryComponents:[SocialDialogComponent],
+  entryComponents:[SocialDialogComponent, DynamicComponent, AframeComponent],
   imports: [
     ResponsiveModule,
     BrowserModule,
@@ -63,12 +73,17 @@ export function ResponsiveDefinition(){
     SwiperModule,
     MaterialModule.forRoot(),
     ToastModule.forRoot(),
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    StoreModule.provideStore( vr_reducers  ),
+    StoreDevtoolsModule.instrumentOnlyWithExtension({
+      maxAge: 5
+    })
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [{
     provide: ResponsiveConfig,
     useFactory: ResponsiveDefinition
-  }],
+  }, LogService, VrModuleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

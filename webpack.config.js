@@ -7,6 +7,7 @@
 // with the following altered webpack config:
 
 "use strict";
+
 var webpack_build_typescript_1 = require('./webpack-build-typescript');
 var webpackMerge = require('webpack-merge');
 var config_1 = require('./config');
@@ -54,7 +55,7 @@ var NgCliWebpackConfig = (function () {
            fields: null,
 		       stats: {chunkModules: true}
         });
-		
+
 		switch (this.target) {
             case 'development':
                 var data = webpack_build_development_1.getWebpackDevConfigPartial(projectRoot, appConfig);
