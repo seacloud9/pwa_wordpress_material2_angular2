@@ -1,17 +1,12 @@
-import { Component, Input, Directive } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'PostListCard',
-  styleUrls: ['post-list-card.directive.scss'],
-  templateUrl: 'post-list-card.directive.html'
+  templateUrl: './post-list-card.component.html',
+  styleUrls: ['./post-list-card.component.scss']
 })
+export class PostListCardComponent implements OnInit {
 
-@Directive({
-  selector: '[PostContent]'
-})
-
-export class PostListCard {
   @Input() PostContent: any;
   constructor(private router: Router) {
 
@@ -21,4 +16,9 @@ export class PostListCard {
     slug = slug.split('/')
     this.router.navigate([slug[0],slug[1],slug[2], slug[3]]);
   }
+
+
+  ngOnInit() {
+  }
+
 }

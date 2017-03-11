@@ -1,6 +1,6 @@
 <md-card class="wpsc9">
   <md-card-header *xl>
-    <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb']?.source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
+    <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb']?.source_url) : null}}" md-card-image onerror="catchImgErr(this)"    />
   </md-card-header>
   <md-card-header *lg>
     <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb']?.source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
@@ -13,7 +13,7 @@
   </md-card-header>
   <md-card-header *xs class="mdXs">
     <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb']?.source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
-    </md-card-header>
+  </md-card-header>
   <md-card-content (click)="selectPost((PostContent.slugFormat + '/'+  PostContent.slug))">
     <div [innerHTML]="PostContent.title.rendered | sanitizeHtml" class="sc9TitlePost"></div>
   </md-card-content>
@@ -22,14 +22,11 @@
     </div>
     <md-menu #menu="mdMenu">
       <div md-menu-item>
-        <div ceiboShare  [facebook]="{url: PostContent.slugFormat + '/'+  PostContent.slug}" class="mdi mdi-facebook mdi-24px box facebook"></div>
-      </div>
-      <div md-menu-item>
-        <div  ceiboShare  [googlePlus]="{url:PostContent.slugFormat + '/'+  PostContent.slug}" class="mdi mdi-account-plus mdi-24px box account-plus"></div>
-      </div>
-      <div md-menu-item>
-        <div  ceiboShare  [twitter]="{url:PostContent.slugFormat + '/'+  PostContent.slug}" class="mdi mdi-twitter mdi-24px box twitter">
-        </div>
+        <share-container
+          [direction]="vertical"
+          [expandable]="false"
+          [textEnabled]="false"
+          [platforms]="['googlePlus','twitter','facebook']"></share-container>
       </div>
     </md-menu>
   </md-card-actions>

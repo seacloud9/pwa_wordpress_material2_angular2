@@ -17,12 +17,12 @@ import * as _ from 'lodash';
 // State Management with Redux
 import '@ngrx/core/add/operator/select';
 import { Store } from '@ngrx/store';
-const template = require('./wrapper.component.html');
-const style = require('./wrapper.component.scss');
+
 
 @Component({
   selector: 'vr-wrapper',
-  template: template,
+  styleUrls: ['wrapper.component.scss'],
+  templateUrl: 'wrapper.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Wrapper {

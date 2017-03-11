@@ -3,7 +3,6 @@ import {Title} from '@angular/platform-browser';
 import { Router, ActivatedRoute, Params} from '@angular/router';
 import { Post} from './../shared/interfaces/wordpress';
 import {MdDialog, MdDialogRef} from '@angular/material';
-import {PostListCard} from '../directives/post-list-card.directive'
 import { InfiniteScroll } from 'angular2-infinite-scroll';
 import {WordpressService} from './../shared/services/wordpress.service';
 

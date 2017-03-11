@@ -14,20 +14,20 @@ import { AboutComponent } from './about/about.component';
 import { SanitizeHtml } from './shared/pipes/SanitizeHtml';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { ResponsiveModule, ResponsiveConfig } from 'ng2-responsive';
-import { PostListCard } from './directives/post-list-card.directive';
-import { CeiboShare } from 'ng2-social-share';
+import { ShareModule } from 'ng2share/share.module';
 import { LazyLoadImageModule } from 'ng2-lazyload-image';
 import { InfiniteScrollModule } from 'angular2-infinite-scroll';
 import {ToastModule} from 'ng2-toastr/ng2-toastr';
 import { SwiperModule } from 'angular2-useful-swiper';
 import { LogService } from './shared/services/log.service';
 import { VrModuleService } from './shared/services/vr-module.service';
-import { Store, StoreModule } from '@ngrx/store';
+import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import * as vr_reducers  from './shared/reducers';
 import {  Wrapper } from './wrapper/wrapper.component';
 import { DynamicComponent } from './dynamic/dynamic.component';
 import { AframeComponent } from './aframe/aframe.component';
+import { PostListCardComponent } from './post-list-card/post-list-card.component';
 
 
 let config = {
@@ -56,14 +56,14 @@ export function ResponsiveDefinition(){
     SanitizeHtml,
     SocialDialogComponent,
     PostDetailComponent,
-    CeiboShare,
     Wrapper,
-    PostListCard,
     DynamicComponent,
-    AframeComponent
+    AframeComponent,
+    PostListCardComponent
   ],
   entryComponents:[SocialDialogComponent, DynamicComponent, AframeComponent],
   imports: [
+    ShareModule,
     ResponsiveModule,
     BrowserModule,
     ReactiveFormsModule,
