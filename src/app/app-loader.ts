@@ -9,6 +9,7 @@ const hello = <IVrModule>{
   name: 'hello',
   type: VrModuleType.AFrame,
   markup: `
+               
               <a-scene>
                   <a-sphere position="0 1.25 -1" radius="1.25" color="#EF2D5E"></a-sphere>
                   <a-box position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1"  
@@ -19,6 +20,27 @@ const hello = <IVrModule>{
                   <a-sky color="#ECECEC"></a-sky>
               </a-scene>
               `
+};
+const tron = <IVrModule>{
+  id: '666',
+  name: 'tron',
+  type: VrModuleType.AFrame,
+  markup: `     
+          <a-scene>
+              <a-assets>
+                  <a-asset-item id="logo-obj" src="/assets/model/logo.obj"></a-asset-item>
+                  <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
+              </a-assets>
+              <a-entity obj-model="obj: #logo-obj" id="target" position="0 0.6 0" rotation="-90 0 -180" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky; side:double"></a-entity>
+          
+              <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+          
+              <a-entity position="0 0 4">
+                  <a-camera target="#target" distance="1" orbit-controls look-controls-enabled=false wasd-controls-enabled=false position="0 0 0" ></a-camera>
+        
+              </a-entity>
+          </a-scene>
+          `
 };
 const curvedMockups = <IVrModule>{
   id: '002',
@@ -308,5 +330,5 @@ const dynamicLights = <IVrModule> {
 };
 
 export const predefinedModules: IVrModule[] = [hello, curvedMockups,
-  spheresAndFog, shopping,
+  spheresAndFog, shopping, tron,
   dynamicLights];

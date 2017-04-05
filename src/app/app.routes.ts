@@ -4,9 +4,11 @@ import { HomeComponent } from './home/home.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { AboutComponent } from './about/about.component';
+import { IntroComponent } from './intro/intro.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'intro', component: IntroComponent },
   {
     path: 'post', component: PostListComponent
   },
@@ -18,5 +20,5 @@ export const routes: Routes = [
     component: PostDetailComponent
   },
   { path: 'about', component: AboutComponent },
-  { path: 'aframe', component: Wrapper },
+  { path: 'aframe/:id', component: Wrapper },
 ];

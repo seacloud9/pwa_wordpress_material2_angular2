@@ -9,145 +9,24 @@
   <link href="https://npmcdn.com/@angular2-material/core@latest/style/core.css" rel="stylesheet">
   <link href="https://npmcdn.com/@angular2-material/core@latest/overlay/overlay.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="player">
+  <meta name="twitter:site" content="@seacloud9">
+  <meta name="twitter:title" content="@aframe wordpress">
+  <meta name="twitter:description" content="aFrame, Angular, material design and wordpress">
+  <meta name="twitter:player" content="https://seacloud9.org">
+  <meta name="twitter:player:width" content="600">
+  <meta name="twitter:player:height" content="370">
   <link rel="icon" type="image/x-icon" href="assets/images/icons/icon-72x72.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#ef5350">
   <meta name="description" content="seacloud9 / i-create blog">
   <meta name="keywords" content="SeaCloud9, PWA, webVR, i-create, Angular, Wordpress, JavaScript">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.5.0/aframe.js"></script>
-  <style>
-    main {display:flex;min-height:93vh;flex-direction:column}
-    .sc9Container{
-      float: left;
-      width:100%;
-     overflow: hidden;
-    }
-    img{
-      max-width: 100%;
-    }
-    .sc9{
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      display: flex;
-      flex: 1;
-      min-height: 500px;
-      flex-direction: column;
-      align-items: stretch;
-      align-content: stretch;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    blockquote{
-      float: left;
-      margin: 0px;
-    }
-    @-webkit-keyframes pluse {
-      from { fill: #1565C0; stroke:#E3F2FD; }
-      50% { fill: #0D47A1; stroke: #BBDEFB; }
-      to { fill: #1565C0; stroke:#E3F2FD;  }
-    }
-
-    .sc9 svg{
-      margin: auto;
-      text-align: center;
-      justify-content: center;
-
-    }
-    #sc9logoSVG{
-      -webkit-animation-name: pluse;
-      -webkit-animation-duration: 500ms;
-      -webkit-animation-iteration-count: infinite;
-    }
-    @import url(http://fonts.googleapis.com/css?family=RobotoDraft:500);
-
-
-
-    .spinner
-    {
-      -webkit-animation: rotation 1.4s linear infinite;
-      animation: rotation 1.4s linear infinite;
-    }
-
-    @-webkit-keyframes rotation
-    {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-
-      100% {
-        -webkit-transform: rotate(270deg);
-        transform: rotate(270deg);
-      }
-    }
-
-    @keyframes rotation
-    {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-
-      100% {
-        -webkit-transform: rotate(270deg);
-        transform: rotate(270deg);
-      }
-    }
-
-    .circle
-    {
-      stroke-dasharray: 187;
-      stroke-dashoffset: 0;
-      -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-      transform-origin: center;
-      -webkit-animation: turn 1.4s ease-in-out infinite;
-      animation: turn 1.4s ease-in-out infinite;
-    }
-
-    @-webkit-keyframes turn
-    {
-      0% {
-        stroke-dashoffset: 187;
-      }
-
-      50% {
-        stroke-dashoffset: 46.75;
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-      }
-
-      100% {
-        stroke-dashoffset: 187;
-        -webkit-transform: rotate(450deg);
-        transform: rotate(450deg);
-      }
-    }
-
-    @keyframes turn
-    {
-      0% {
-        stroke-dashoffset: 187;
-      }
-
-      50% {
-        stroke-dashoffset: 46.75;
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-      }
-
-      100% {
-        stroke-dashoffset: 187;
-        -webkit-transform: rotate(450deg);
-        transform: rotate(450deg);
-      }
-    }
-    svg:nth-child(1){stroke:#3f51b5;}
-
-  </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="assets/vendor/aframe-godrays-postprocess.js"></script>
+  <script src="assets/vendor/aframe-orbit-controls-component.min.js"></script>
+  <script src="assets/vendor/aframe-html-shader.js"></script>
 </head>
   <body>
       <app-root>

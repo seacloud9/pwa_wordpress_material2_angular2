@@ -3,6 +3,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-aframe',
+  styleUrls: ['aframe.component.scss'],
   template:'<div [innerHTML]="html"></div>'
 })
 export class AframeComponent {

@@ -28,6 +28,8 @@ import {  Wrapper } from './wrapper/wrapper.component';
 import { DynamicComponent } from './dynamic/dynamic.component';
 import { AframeComponent } from './aframe/aframe.component';
 import { PostListCardComponent } from './post-list-card/post-list-card.component';
+import { IntroComponent } from './intro/intro.component';
+import { ng2Parallax  } from 'ang2-parallax/ng2parallax';
 
 
 let config = {
@@ -59,7 +61,9 @@ export function ResponsiveDefinition(){
     Wrapper,
     DynamicComponent,
     AframeComponent,
-    PostListCardComponent
+    PostListCardComponent,
+    ng2Parallax,
+    IntroComponent
   ],
   entryComponents:[SocialDialogComponent, DynamicComponent, AframeComponent],
   imports: [

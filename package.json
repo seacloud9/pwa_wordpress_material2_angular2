@@ -36,6 +36,7 @@
     "@types/lodash": "^4.14.54",
     "aframe": "^0.5.0",
     "aframe-html-shader": "^0.1.1",
+    "ang2-parallax": "^1.0.2",
     "angular2-infinite-scroll": "^0.3.1",
     "angular2-useful-swiper": "^3.0.0",
     "blueprint-css": "2.0.0-beta.5",

@@ -77,11 +77,7 @@ export class Wrapper {
          html: this.src
        }
      }
-
       this.changeDetectorRef.markForCheck();
-
-
-
     });
   }
   private destroySubscriptions() {

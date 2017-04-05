@@ -12,3 +12,424 @@
 @import '../node_modules/blueprint-css/src/_utility';
 @import 'styles/_sprites';
 
+
+
+
+.glitch {
+  color: #fff;
+  position: relative;
+  width: 339px;
+  margin: 0 auto
+}
+
+.glitch:after,.glitch:before {
+  top: 0;
+  overflow: hidden;
+  content: attr(data-text);
+  position: absolute;
+  color: #fff
+}
+
+@-webkit-keyframes noise-anim {
+  0% {
+    clip: rect(78px,9999px,66px,0)
+  }
+
+  5% {
+    clip: rect(29px,9999px,77px,0)
+  }
+
+  10% {
+    clip: rect(80px,9999px,36px,0)
+  }
+
+  15.0% {
+    clip: rect(28px,9999px,38px,0)
+  }
+
+  20% {
+    clip: rect(93px,9999px,11px,0)
+  }
+
+  25% {
+    clip: rect(92px,9999px,87px,0)
+  }
+
+  30.0% {
+    clip: rect(51px,9999px,96px,0)
+  }
+
+  35% {
+    clip: rect(34px,9999px,29px,0)
+  }
+
+  40% {
+    clip: rect(65px,9999px,81px,0)
+  }
+
+  45% {
+    clip: rect(44px,9999px,14px,0)
+  }
+
+  50% {
+    clip: rect(32px,9999px,65px,0)
+  }
+
+  55.0% {
+    clip: rect(63px,9999px,84px,0)
+  }
+
+  60.0% {
+    clip: rect(81px,9999px,54px,0)
+  }
+
+  65% {
+    clip: rect(3px,9999px,41px,0)
+  }
+
+  70% {
+    clip: rect(77px,9999px,91px,0)
+  }
+
+  75% {
+    clip: rect(19px,9999px,3px,0)
+  }
+
+  80% {
+    clip: rect(4px,9999px,56px,0)
+  }
+
+  85.0% {
+    clip: rect(35px,9999px,56px,0)
+  }
+
+  90% {
+    clip: rect(23px,9999px,30px,0)
+  }
+
+  95% {
+    clip: rect(57px,9999px,89px,0)
+  }
+
+  100% {
+    clip: rect(60px,9999px,72px,0)
+  }
+}
+
+.glitch:after {
+  left: 2px;
+  text-shadow: -1px 0 red;
+  clip: rect(0,900px,0,0);
+  -webkit-animation: noise-anim 2s infinite linear alternate-reverse
+}
+
+@-webkit-keyframes noise-anim-2 {
+  0% {
+    clip: rect(16px,9999px,69px,0)
+  }
+
+  5% {
+    clip: rect(60px,9999px,8px,0)
+  }
+
+  10% {
+    clip: rect(50px,9999px,87px,0)
+  }
+
+  15.0% {
+    clip: rect(78px,9999px,44px,0)
+  }
+
+  20% {
+    clip: rect(45px,9999px,45px,0)
+  }
+
+  25% {
+    clip: rect(36px,9999px,20px,0)
+  }
+
+  30.0% {
+    clip: rect(28px,9999px,72px,0)
+  }
+
+  35% {
+    clip: rect(42px,9999px,100px,0)
+  }
+
+  40% {
+    clip: rect(100px,9999px,3px,0)
+  }
+
+  45% {
+    clip: rect(34px,9999px,78px,0)
+  }
+
+  50% {
+    clip: rect(10px,9999px,6px,0)
+  }
+
+  55.0% {
+    clip: rect(35px,9999px,68px,0)
+  }
+
+  60.0% {
+    clip: rect(56px,9999px,89px,0)
+  }
+
+  65% {
+    clip: rect(13px,9999px,86px,0)
+  }
+
+  70% {
+    clip: rect(88px,9999px,63px,0)
+  }
+
+  75% {
+    clip: rect(46px,9999px,78px,0)
+  }
+
+  80% {
+    clip: rect(64px,9999px,82px,0)
+  }
+
+  85.0% {
+    clip: rect(70px,9999px,45px,0)
+  }
+
+  90% {
+    clip: rect(11px,9999px,91px,0)
+  }
+
+  95% {
+    clip: rect(58px,9999px,49px,0)
+  }
+
+  100% {
+    clip: rect(47px,9999px,74px,0)
+  }
+}
+
+.glitch:before {
+  left: -2px;
+  text-shadow: 3px 0 #ff0591;
+  clip: rect(0,900px,0,0);
+  -webkit-animation: noise-anim-2 3s infinite linear alternate-reverse
+}
+main {display:flex;min-height:93vh;flex-direction:column}
+.sc9Container{
+  float: left;
+  width:100%;
+  overflow: hidden;
+}
+img{
+  max-width: 100%;
+}
+.sc9{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  flex: 1;
+  min-height: 500px;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+blockquote{
+  float: left;
+  margin: 0px;
+}
+@-webkit-keyframes pluse {
+  from { fill: #1565C0; stroke:#E3F2FD; }
+  50% { fill: #0D47A1; stroke: #BBDEFB; }
+  to { fill: #1565C0; stroke:#E3F2FD;  }
+}
+
+.sc9 svg{
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+
+}
+#sc9logoSVG{
+  -webkit-animation-name: pluse;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-iteration-count: infinite;
+}
+@import url(http://fonts.googleapis.com/css?family=RobotoDraft:500);
+
+
+
+.spinner
+{
+  -webkit-animation: rotation 1.4s linear infinite;
+  animation: rotation 1.4s linear infinite;
+}
+
+@-webkit-keyframes rotation
+{
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes rotation
+{
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+.circle
+{
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: turn 1.4s ease-in-out infinite;
+  animation: turn 1.4s ease-in-out infinite;
+}
+
+@-webkit-keyframes turn
+{
+  0% {
+    stroke-dashoffset: 187;
+  }
+
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes turn
+{
+  0% {
+    stroke-dashoffset: 187;
+  }
+
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+svg:nth-child(1){stroke:#3f51b5;}
+
+#target {
+  width: 512px;
+  height: 256px;
+  position: absolute;
+  background: rgba(255,255,0,0.3);
+}
+#htmlTarget.hide {
+  z-index: -1;
+}
+#target h1 {
+  font-family: Arial;
+  font-size: 110px;
+  margin: 0;
+  vertical-align: top;
+  color: white;
+}
+#target h1 span {
+  color: tomato;
+}
+#emoji {
+  position: absolute;
+  font-size: 512px;
+  color: mediumTurquoise;
+  font-style: serif;
+}
+#pre {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  font-size: 50px;
+  background: royalblue;
+  color: tomato;
+}
+#htmlTarget {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#debug {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 512px) {
+  #target {
+    width: 256px;
+    height: 126px;
+  }
+  #target h1 {
+    font-size: 55px;
+  }
+  #pre {
+    height: 50px;
+    font-size: 25px;
+  }
+  #emoji {
+    position: absolute;
+    font-size: 256px;
+    color: mediumTurquoise;
+  }
+}
+body[data-vr="true"] .novr{
+  display: none;
+}
+
+app-aframe{
+  float: left;
+  display: block;
+  width: 100%;
+}
+
+main{
+  display: block !important;
+  padding: 10px !important;
+  padding-top: 66px !important;
+}
+
+a-scene{
+  position: absolute !important;
+}
+vr-wrapper{
+  float: left;
+  display: block;
+}
