@@ -1,9 +1,9 @@
-import { Injectable, state, style, animate, transition, 
-  AnimationStateDeclarationMetadata, AnimationStateTransitionMetadata } from '@angular/core';
+import { Injectable, state, style, animate, transition,
+  AnimationEntryMetadata, AnimationStateTransitionMetadata } from '@angular/core';
 
 @Injectable()
 export class AnimationService {
-  static fadeInAndOut: (AnimationStateDeclarationMetadata | AnimationStateTransitionMetadata)[] = [
+  static fadeInAndOut: (AnimationEntryMetadata | AnimationStateTransitionMetadata)[] = [
     state('in', style({ transform: 'scale3d(.0, .0, .0)' })),
     transition('void => *', [
       style({ transform: 'scale3d(.3, .3, .3)' }),
@@ -14,7 +14,7 @@ export class AnimationService {
     ])
   ];
 
-  static fadeIn: (AnimationStateDeclarationMetadata | AnimationStateTransitionMetadata)[] = [
+  static fadeIn: (AnimationEntryMetadata | AnimationStateTransitionMetadata)[] = [
     state('in', style({ transform: 'scale3d(.0, .0, .0)' })),
     transition('void => *', [
       style({ transform: 'scale3d(.3, .3, .3)' }),

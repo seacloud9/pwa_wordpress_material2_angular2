@@ -1,10 +1,10 @@
-import { NgPokedexPage } from './app.po';
+import { NgwordpressPage } from './app.po';
 
-describe('ng-pokedex App', function() {
-  let page: NgPokedexPage;
+describe('ngwordpress App', () => {
+  let page: NgwordpressPage;
 
   beforeEach(() => {
-    page = new NgPokedexPage();
+    page = new NgwordpressPage();
   });
 
   it('should display message saying app works', () => {

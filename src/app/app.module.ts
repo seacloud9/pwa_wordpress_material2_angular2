@@ -15,7 +15,7 @@ import { SanitizeHtml } from './shared/pipes/SanitizeHtml';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { ResponsiveModule, ResponsiveConfig } from 'ng2-responsive';
 import { ShareModule } from 'ng2share/share.module';
-import { LazyLoadImageModule } from 'ng2-lazyload-image';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { InfiniteScrollModule } from 'angular2-infinite-scroll';
 import {ToastModule} from 'ng2-toastr/ng2-toastr';
 import { SwiperModule } from 'angular2-useful-swiper';

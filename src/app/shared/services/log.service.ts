@@ -4,8 +4,8 @@
  */
 import { Injectable, OnInit } from '@angular/core';
 import * as _ from 'lodash';
-const circularJson = require('circular-json');
-const bows = require('bows');
+import circularJson from  'circular-json';
+import bows  from 'bows';
 
 @Injectable()
 export class LogService implements OnInit {
