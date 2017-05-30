@@ -16,13 +16,12 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
 import { ResponsiveModule, ResponsiveConfig } from 'ng2-responsive';
 import { ShareModule } from 'ng2share/share.module';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
-import { InfiniteScrollModule } from 'angular2-infinite-scroll';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import {ToastModule} from 'ng2-toastr/ng2-toastr';
 import { SwiperModule } from 'angular2-useful-swiper';
 import { LogService } from './shared/services/log.service';
 import { VrModuleService } from './shared/services/vr-module.service';
 import { StoreModule } from '@ngrx/store';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import * as vr_reducers  from './shared/reducers';
 import {  Wrapper } from './wrapper/wrapper.component';
 import { DynamicComponent } from './dynamic/dynamic.component';
@@ -46,6 +45,13 @@ let config = {
 export function ResponsiveDefinition(){
   return new ResponsiveConfig(config);
 };
+
+export function createInstrumentOptions() {
+  return {
+    maxAge: 5
+  }
+}
+
 
 @NgModule({
   declarations: [
@@ -78,10 +84,7 @@ export function ResponsiveDefinition(){
     MaterialModule.forRoot(),
     ToastModule.forRoot(),
     RouterModule.forRoot(routes),
-    StoreModule.provideStore( vr_reducers  ),
-    StoreDevtoolsModule.instrumentOnlyWithExtension({
-      maxAge: 5
-    })
+    StoreModule.provideStore( vr_reducers  )
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [{

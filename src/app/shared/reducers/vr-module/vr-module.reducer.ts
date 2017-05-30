@@ -9,8 +9,7 @@ const initialState: IVrModule[] = [];
 /**
  * VR Module reducer for managing the available VR modules
  */
-const vrModuleReducer: ActionReducer<IVrModule[]> = (state: IVrModule[] =
-                                                    initialState, action: Action) => {
+const vrModuleReducer: ActionReducer<IVrModule[]> = (state: IVrModule[] = initialState, action: Action) => {
   switch (action.type) {
     case VR_MODULE_REMOVED:
       return _.filter(state, mod => mod.id === action.payload.id);

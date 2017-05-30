@@ -1,5 +1,5 @@
 import { Component, Injector, ChangeDetectorRef } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-aframe',
