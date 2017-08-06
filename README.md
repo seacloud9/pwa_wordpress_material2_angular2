@@ -1,6 +1,17 @@
 # Ngwordpress
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+
+![example 1](https://raw.githubusercontent.com/seacloud9/pwa_wordpress_material2_angular2/example1.png)
+![example 1](https://raw.githubusercontent.com/seacloud9/pwa_wordpress_material2_angular2/example2.png)
+##Work in Progress
+Use at your own risk.
+
+## What is it?
+Ngwordpress is a progressive mobile web app utiliizing wordpress as a backend.
+
+## What wordpress plugins do I need
+https://wordpress.org/plugins/better-rest-api-featured-images/
+
 
 ## Development server
 
