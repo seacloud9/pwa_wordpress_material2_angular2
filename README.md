@@ -1,8 +1,10 @@
-# Ngwordpress
+# [Ngwordpress](http://seacloud9.github.io/ngwordpress/post)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
-![example 1](https://raw.githubusercontent.com/seacloud9/pwa_wordpress_material2_angular2/example1.png)
-![example 1](https://raw.githubusercontent.com/seacloud9/pwa_wordpress_material2_angular2/example2.png)
+<img src="http://seacloud9.github.io/ngwordpress/example1.png" />
+<br />
+<img src="http://seacloud9.github.io/ngwordpress/example2.png" />
+
 ##Work in Progress
 Use at your own risk.
 
