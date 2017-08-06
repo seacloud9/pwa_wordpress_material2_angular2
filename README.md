@@ -9,7 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Use at your own risk.
 
 ## What is it?
-Ngwordpress is a progressive mobile web app utiliizing wordpress as a backend.
+Ngwordpress is a progressive mobile web app utilizing wordpress as a backend.
 
 ## What wordpress plugins do I need
 https://wordpress.org/plugins/better-rest-api-featured-images/
