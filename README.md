@@ -1,4 +1,4 @@
-# [Ngwordpress](http://seacloud9.github.io/ngwordpress)
+# [Ngwordpress](https://seacloud9.github.io/ngwordpress/)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 <img src="http://seacloud9.github.io/ngwordpress/example1.png" style="width:200px" />
