@@ -9,9 +9,30 @@ declare var Swiper: any;
 })
 export class IntroComponent implements OnInit {
 
-  config: Object = {
+  xsconfig: Object = {
+    pagination: '.swiper-pagination',
+    slidesPerView: 1,
+    paginationClickable: true,
+    spaceBetween: 0
+  };
+
+  mdconfig: Object = {
+    pagination: '.swiper-pagination',
+    slidesPerView: 2,
+    paginationClickable: true,
+    spaceBetween: 0
+  };
+
+  lgconfig: Object = {
     pagination: '.swiper-pagination',
     slidesPerView: 3,
+    paginationClickable: true,
+    spaceBetween: 0
+  };
+
+  xlconfig: Object = {
+    pagination: '.swiper-pagination',
+    slidesPerView: 4,
     paginationClickable: true,
     spaceBetween: 0
   };

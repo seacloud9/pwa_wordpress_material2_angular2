@@ -29,6 +29,7 @@ import { AframeComponent } from './aframe/aframe.component';
 import { PostListCardComponent } from './post-list-card/post-list-card.component';
 import { IntroComponent } from './intro/intro.component';
 import { ng2Parallax  } from 'ang2-parallax/ng2parallax';
+import { SlideContainerComponent } from './slide-container/slide-container.component';
 
 
 let config = {
@@ -69,7 +70,8 @@ export function createInstrumentOptions() {
     AframeComponent,
     PostListCardComponent,
     ng2Parallax,
-    IntroComponent
+    IntroComponent,
+    SlideContainerComponent
   ],
   entryComponents:[SocialDialogComponent, DynamicComponent, AframeComponent],
   imports: [
