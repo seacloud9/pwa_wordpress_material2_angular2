@@ -11,7 +11,7 @@ export class IntroComponent implements OnInit {
 
   config: Object = {
     pagination: '.swiper-pagination',
-    slidesPerView: 1,
+    slidesPerView: 3,
     paginationClickable: true,
     spaceBetween: 0
   };

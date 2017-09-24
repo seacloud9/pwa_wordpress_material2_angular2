@@ -221,9 +221,7 @@ main {display:flex;min-height:93vh;flex-direction:column}
   width:100%;
   overflow: hidden;
 }
-img{
-  max-width: 100%;
-}
+
 .sc9{
   background-size: cover;
   background-repeat: no-repeat;
@@ -436,4 +434,12 @@ vr-wrapper{
 
 .glitchShadow{
    text-shadow: -1.2px 0 0 #09f19d, 1.2px 0 0 #ff0591;
+}
+
+.mat-card-header-text{
+  display: none !important;
+}
+
+.mat-card-image{
+  margin:0px 0px !important;
 }

@@ -14,7 +14,15 @@ md-card-header{
   max-height: 333px;
 }
 
-.mdSm, .mdXs{
+.mdSm{
+  max-height: 333px;
+}
+
+.mdSm{
+  max-height: 333px;
+}
+
+.mdXs{
   max-height: 225px;
 }
 
@@ -29,6 +37,7 @@ md-card-header{
   bottom: 22px;
   right: 22px;
 }
+
 
 @mixin aspect-ratio($width, $height) {
   position: relative;
@@ -49,5 +58,5 @@ md-card-header{
 }
 
 .aspectMainTain {
-  @include aspect-ratio(16,9);
+  @include aspect-ratio(4,3);
 }

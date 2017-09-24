@@ -31,6 +31,17 @@
     </md-grid-tile>
   </md-grid-list>
 </div>
+<div *mdTb>
+  <md-grid-list cols="2" rowHeight="440px" gutterSize="10px">
+    <md-grid-tile *ngFor="let post of _posts" infinite-scroll
+                  [infiniteScrollDistance]="2"
+                  [infiniteScrollUpDistance]="1.5"
+                  [infiniteScrollThrottle]="15000"
+                  (scrolled)="onScrollDown()">
+      <PostListCard [PostContent]="post" class="postContainerWide"></PostListCard>
+    </md-grid-tile>
+  </md-grid-list>
+</div>
 <div *sm>
   <md-grid-list cols="1" rowHeight="440px" gutterSize="10px" infinite-scroll
                 [infiniteScrollDistance]="2"

@@ -8,6 +8,9 @@
   <md-card-header *md>
     <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb']?.source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
   </md-card-header>
+  <md-card-header *isTablet>
+    <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb']?.source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
+  </md-card-header>
   <md-card-header *sm class="mdSm">
     <img src="{{PostContent.better_featured_image !== null ? (PostContent.better_featured_image.media_details.sizes['post-thumb']?.source_url) : null}}" md-card-image onerror="catchImgErr(this)"   />
   </md-card-header>

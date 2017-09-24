@@ -33,13 +33,13 @@ import { ng2Parallax  } from 'ang2-parallax/ng2parallax';
 
 let config = {
   breakPoints: {
-    xs: {max: 600},
-    sm: {min: 601, max: 959},
-    md: {min: 960, max: 1279},
-    lg: {min: 1280, max: 1919},
-    xl: {min: 1920}
+    xs: {max: 500},
+    sm: {min: 501, max: 767},
+    md: {min: 768, max: 1024},
+    lg: {min: 1025, max: 2200},
+    xl: {min: 2201}
   },
-  debounceTime: 100 // allow to debounce checking timer
+  debounceTime: 50 // allow to debounce checking timer
 };
 
 export function ResponsiveDefinition(){
